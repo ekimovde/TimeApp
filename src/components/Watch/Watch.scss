@@ -1,0 +1,139 @@
+@import "styles/variables.scss";
+
+.watch {
+  margin-right: 100px;
+  @extend %flex-center-center;
+  flex-direction: column;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .watch__effect {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 6px solid $blue;
+    @extend %flex-center-center;
+
+    .watch__border {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      border: 4px solid $gray-black;
+      @extend %flex-center-center;
+
+      .watch__clock {
+        width: 90%;
+        height: 90%;
+        background: url("../../assets/clock.png") no-repeat center;
+        background-size: cover;
+        @extend %flex-center-center;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background-color: $white;
+          border-radius: 50%;
+          z-index: 100;
+        }
+
+        .watch__hour {
+          position: absolute;
+          width: 110px;
+          height: 110px;
+
+          .watch__hr {
+            @extend %flex-justify-center;
+            position: absolute;
+            border-radius: 50%;
+            width: 110px;
+            height: 110px;
+
+            &:before {
+              content: "";
+              position: absolute;
+              width: 8px;
+              height: 50px;
+              background-color: $yellow;
+              z-index: 10;
+              border-radius: 6px 6px 0 0;
+            }
+          }
+        }
+
+        .watch__min {
+          position: absolute;
+          width: 170px;
+          height: 170px;
+
+          .watch__mn {
+            @extend %flex-justify-center;
+            position: absolute;
+            border-radius: 50%;
+            width: 170px;
+            height: 170px;
+
+            &:before {
+              content: "";
+              position: absolute;
+              width: 4px;
+              height: 80px;
+              background-color: $blue;
+              z-index: 11;
+              border-radius: 6px 6px 0 0;
+            }
+          }
+        }
+
+        .watch__sec {
+          position: absolute;
+          width: 210px;
+          height: 210px;
+
+          .watch__sc {
+            @extend %flex-justify-center;
+            position: absolute;
+            border-radius: 50%;
+            width: 210px;
+            height: 210px;
+
+            &:before {
+              content: "";
+              position: absolute;
+              width: 2px;
+              height: 130px;
+              background-color: $white;
+              z-index: 12;
+              border-radius: 6px 6px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .watch__info {
+    color: $yellow;
+    @extend %flex-center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: $yellow_backg;
+    padding: 10px 12px;
+    border-radius: 6px;
+
+    .watch__icon {
+      font-size: 22px;
+      margin-right: 8px;
+    }
+
+    .watch__time {
+      font-size: 16px;
+    }
+  }
+
+  .watch__select {
+  }
+}

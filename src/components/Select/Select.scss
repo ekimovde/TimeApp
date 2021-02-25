@@ -1,0 +1,54 @@
+@import "styles/variables.scss";
+
+.select {
+  position: relative;
+
+  .select__icon {
+    position: absolute;
+    z-index: 60;
+    color: $violet;
+    right: 5px;
+    font-size: 24px;
+    top: 9px;
+  }
+
+  .select__block {
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: $violet;
+    padding: 10px 30px 10px 15px;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $violet-backg;
+    border-color: $violet-backg;
+
+    option {
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:focus {
+      color: $violet;
+      outline: none;
+      border-color: $violet-backg;
+      font-size: 14px;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}

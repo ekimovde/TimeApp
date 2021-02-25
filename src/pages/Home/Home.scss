@@ -1,0 +1,44 @@
+@import "styles/variables.scss";
+
+.home {
+  padding-top: 70px;
+
+  .container {
+    margin: 0 auto;
+    width: 1080px;
+  }
+
+  .top {
+    @extend %flex-center-center;
+    flex-direction: column;
+
+    .top__block {
+      margin-bottom: 20px;
+      @extend %flex-center;
+      background-color: $green-backg;
+      padding: 12px 12px;
+      border-radius: 6px;
+      color: $green;
+
+      .top__icon {
+        font-size: 22px;
+        margin-right: 8px;
+      }
+    }
+
+    .top__title {
+      margin-bottom: 20px;
+    }
+
+    .top__descr {
+      color: $gray;
+      width: 470px;
+      text-align: center;
+    }
+  }
+
+  .offer {
+    @extend %flex-center-center;
+    margin-top: 50px;
+  }
+}

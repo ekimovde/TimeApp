@@ -1,0 +1,35 @@
+$main-backg: #0f0f10;
+$green-backg: #122119;
+$yellow_backg: #2b2700;
+$select-backg: #27292a;
+$violet-backg: #241e2e;
+
+$white: #fff;
+$green: #25c06d;
+$gray: #808081;
+$gray-black: #2a2a2b;
+$yellow: #f9c50b;
+$violet: #a25ff7;
+$blue: #42a0ff;
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+%flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
